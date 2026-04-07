@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Recaudación por Sucursal – Portátil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    :root{
+      --bg:#0d0f1a;--surface:#131624;--card:#1a1e30;--border:#252a40;
+      --accent:#6c63ff;--accent2:#00d4aa;--accent3:#ff6b6b;--accent4:#ffd166;--accent5:#a855f7;
+      --text:#e8eaf6;--muted:#7b82a8;--radius:14px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+    .header{background:linear-gradient(135deg,#1a1e30,#0f1322);border-bottom:1px solid var(--border);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+    .header-left{display:flex;align-items:center;gap:14px}
+    .header-logo{width:40px;height:40px;background:linear-gradient(135deg,var(--accent),var(--accent2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
+    .header-title h1{font-size:1.15rem;font-weight:700}
+    .header-title p{font-size:.77rem;color:var(--muted)}
+    .header-badges{display:flex;gap:8px;align-items:center}
+    .hbadge{padding:5px 14px;border-radius:8px;font-size:.75rem;font-weight:600;border:1px solid}
+    .hbadge-green{background:rgba(0,212,170,.12);border-color:rgba(0,212,170,.35);color:var(--accent2)}
+    .hbadge-purple{background:rgba(108,99,255,.12);border-color:rgba(108,99,255,.35);color:var(--accent)}
+    .btn-export{background:var(--accent);color:#fff;border:none;padding:8px 16px;border-radius:8px;cursor:pointer;font-weight:700;font-family:inherit}
+    .container{max-width:1480px;margin:0 auto;padding:28px 40px}
+    .filters{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+    .filter-btn{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:6px 14px;font-size:.78rem;cursor:pointer}
+    .filter-btn.active{background:var(--accent);border-color:var(--accent)}
+    .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:24px}
+    .kpi-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative}
+    .kpi-label{font-size:.72rem;color:var(--muted);text-transform:uppercase;font-weight:600}
+    .kpi-value{font-size:1.6rem;font-weight:800;margin:6px 0}
+    .kpi-sub{font-size:.72rem;color:var(--muted)}
+    .charts-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;margin-bottom:16px}
+    .chart-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+    .chart-wrap{height:260px;position:relative}
+    .table-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
+    .data-table{width:100%;border-collapse:collapse;font-size:.85rem}
+    .data-table th{text-align:left;padding:10px;border-bottom:1px solid var(--border);color:var(--muted)}
+    .data-table td{padding:10px;border-bottom:1px solid rgba(255,255,255,.05)}
+    @media(max-width:900px){.charts-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header-left">
+    <div class="header-logo">💰</div>
+    <div class="header-title">
+      <h1>Recaudación por Sucursal</h1>
+      <p>Versión Portátil · Picking Report</p>
+    </div>
+  </div>
+  <div class="header-badges">
+    <span class="hbadge hbadge-purple">Datos Incrustados</span>
+    <button class="btn-export" onclick="exportPNG()">📸 Exportar PNG</button>
+  </div>
+</header>
+<main class="container">
+  <div class="kpi-grid">
+    <div class="kpi-card"><div class="kpi-label">Total USD</div><div class="kpi-value" id="kpiUSD">—</div><div class="kpi-sub">Estimado libre de imptos.</div></div>
+    <div class="kpi-card"><div class="kpi-label">Órdenes</div><div class="kpi-value" id="kpiOrdenes">—</div><div class="kpi-sub" id="kpiSuc">—</div></div>
+  </div>
+  <div class="charts-grid">
+    <div class="chart-card"><div class="chart-wrap"><canvas id="barChart"></canvas></div></div>
+    <div class="chart-card"><div class="chart-wrap"><canvas id="donutChart"></canvas></div></div>
+  </div>
+  <div class="table-card">
+    <table class="data-table">
+      <thead><tr><th>Sucursal</th><th style="text-align:right">Total Local</th><th style="text-align:right">USD</th></tr></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</main>
+<script>
+const BRANCHES = {"CANCHA UY": {"total": 16315476.34, "itbms": 0.0, "libre": 19344594.900000002, "total_usd": 386676.789258, "orders": 5281, "metodos": {"cashondelivery": 288824.69, "free": 74035.75, "mercadopago_adbpayment_cc": 13223488.38, "mercadopago_adbpayment_checkout_pro": 2729127.52}, "diario": {"2025-11": 211957.969014, "2025-12": 174718.820244}}, "Converse PA": {"total": 6292.31, "itbms": 0.0, "libre": 6318.360000000001, "total_usd": 6292.31, "orders": 125, "metodos": {"cashondelivery": 1499.5, "chcybersource": 4012.62, "free": 0.62, "omnipro_bac_securepayment": 779.57}, "diario": {"2025-11": 2098.5, "2025-12": 4193.8099999999995}}, "Etiqueta de Orden": {"total": 0.0, "itbms": 0.0, "libre": 0.0, "total_usd": 0.0, "orders": 1, "metodos": {"Método de Pago": 0.0}, "diario": {}}, "KICKS CO": {"total": 1011420008.27, "itbms": 0.0, "libre": 1036810543.27, "total_usd": 239706.54195999, "orders": 2157, "metodos": {"addi": 314469048.27, "cashondelivery": 16283305.0, "chcybersource": 107661285.0, "free": 437900.0, "mercadopago_adbpayment_checkout_pro": 496163835.0, "sistecredito_gateway": 76404635.0}, "diario": {"2025-11": 96539.15772999, "2025-12": 143167.38423}}, "KICKS CR": {"total": 12890645.0, "itbms": 0.0, "libre": 12999750.0, "total_usd": 25007.851300000002, "orders": 272, "metodos": {"cashondelivery": 2673975.0, "chcybersource": 9037120.0, "free": 0.0, "omnipro_bac_securepayment": 1179550.0}, "diario": {"2025-11": 11308.066, "2025-12": 13699.785300000001}}, "KICKS GT": {"total": 294879.13, "itbms": 0.0, "libre": 297988.77, "total_usd": 37950.944031000006, "orders": 308, "metodos": {"cashondelivery": 33653.71, "chcybersource": 232104.34, "free": 0.0, "omnipro_bac_securepayment": 29121.08}, "diario": {"2025-11": 13833.58977, "2025-12": 24117.354261000004}}, "KICKS HN": {"total": 172628.94999999992, "itbms": 0.0, "libre": 168899.31999999995, "total_usd": 6887.895104999999, "orders": 76, "metodos": {"cashondelivery": 22841.76, "chcybersource": 128294.24, "omnipro_bac_securepayment": 21492.95}, "diario": {"2025-11": 1694.031906, "2025-12": 5193.863198999999}}, "KICKS NI": {"total": 117019.43000000001, "itbms": 0.0, "libre": 117167.09999999999, "total_usd": 3182.9284959999995, "orders": 52, "metodos": {"cashondelivery": 25641.76, "chcybersource": 61054.939999999995, "omnipro_bac_securepayment": 30322.73}, "diario": {"2025-11": 780.986256, "2025-12": 2401.94224}}, "KICKS PA": {"total": 50707.14, "itbms": 0.0, "libre": 50780.21000000001, "total_usd": 50707.14, "orders": 381, "metodos": {"cashondelivery": 7330.89, "chcybersource": 25115.74, "credicorp_clave": 907.5699999999999, "free": 0.0, "omnipro_bac_securepayment": 1849.71, "yappy": 15503.23}, "diario": {"2025-11": 24919.68, "2025-12": 25787.46}}, "KICKS RD": {"total": 92751.95, "itbms": 0.0, "libre": 94461.0, "total_usd": 92751.95, "orders": 15, "metodos": {"cashondelivery": 55763.95, "chcybersource": 36988.0}, "diario": {"2025-11": 20686.95, "2025-12": 72065.0}}, "KICKS SV": {"total": 59314.81, "itbms": 0.0, "libre": 70679.6, "total_usd": 59314.81, "orders": 542, "metodos": {"cashondelivery": 19874.5, "chcybersource": 32607.12, "omnipro_bac_securepayment": 6833.19}, "diario": {"2025-11": 33309.84, "2025-12": 26004.969999999998}}, "KICKS UY": {"total": 6900433.46, "itbms": 0.0, "libre": 8091561.0, "total_usd": 163540.273002, "orders": 1591, "metodos": {"cashondelivery": 134690.43, "free": 34082.0, "mercadopago_adbpayment_cc": 5173791.56, "mercadopago_adbpayment_checkout_pro": 1557869.47}, "diario": {"2025-11": 93383.364495, "2025-12": 70156.908507}}, "SLA CO": {"total": 1810759765.0, "itbms": 0.0, "libre": 1759602575.0, "total_usd": 429150.064305, "orders": 6687, "metodos": {"addi": 507590770.0, "cashondelivery": 25801715.0, "chcybersource": 195525690.0, "free": -32000.0, "mercadopago_adbpayment_checkout_pro": 892853555.0, "sistecredito_gateway": 189020035.0}, "diario": {"2025-11": 174269.239065, "2025-12": 254880.82523999998}}, "SLA CR": {"total": 32474640.0, "itbms": 0.0, "libre": 32057550.0, "total_usd": 63000.801600000006, "orders": 1352, "metodos": {"cashondelivery": 5748845.0, "chcybersource": 23411930.0, "free": 0.0, "omnipro_bac_securepayment": 3313865.0}, "diario": {"2025-11": 29284.688000000002, "2025-12": 33716.113600000004}}, "SLA GT": {"total": 713366.8099999998, "itbms": 0.0, "libre": 708585.6299999999, "total_usd": 91810.30844700002, "orders": 1585, "metodos": {"cashondelivery": 62008.42, "chcybersource": 612389.6, "free": 0.0, "omnipro_bac_securepayment": 38968.79}, "diario": {"2025-11": 37570.482378, "2025-12": 54239.826069}}, "SLA HN": {"total": 1411080.6999999997, "itbms": 0.0, "libre": 1334073.3900000001, "total_usd": 56302.11993, "orders": 1237, "metodos": {"cashondelivery": 128873.75, "chcybersource": 1274236.61, "free": 0.0, "omnipro_bac_securepayment": 7970.34}, "diario": {"2025-11": 14115.266592, "2025-12": 42186.853338}}, "SLA NI": {"total": 538932.52, "itbms": 0.0, "libre": 539668.12, "total_usd": 14658.964543999999, "orders": 372, "metodos": {"cashondelivery": 168971.71, "chcybersource": 281069.44, "free": 0.0, "omnipro_bac_securepayment": 88891.37}, "diario": {"2025-11": 5659.436815999999, "2025-12": 8999.527728}}, "SLA PA": {"total": 182464.29, "itbms": 0.0, "libre": 187270.49, "total_usd": 182464.29, "orders": 3131, "metodos": {"cashondelivery": 25852.64, "chcybersource": 89206.62, "credicorp_clave": 2151.92, "free": 42.79, "omnipro_bac_securepayment": 10381.56, "yappy": 54828.76}, "diario": {"2025-11": 81107.62, "2025-12": 101356.67}}, "SLA RD": {"total": 503326.0, "itbms": 0.0, "libre": 493526.0, "total_usd": 503326.0, "orders": 154, "metodos": {"bhd_payment_method": 13297.0, "cashondelivery": 118539.0, "chcybersource": 371490.0}, "diario": {"2025-11": 188576.0, "2025-12": 314750.0}}, "SLA SV": {"total": 199506.04, "itbms": 0.0, "libre": 224758.02000000002, "total_usd": 199506.04, "orders": 2933, "metodos": {"cashondelivery": 42374.68, "chcybersource": 134289.83, "free": 0.0, "omnipro_bac_securepayment": 22841.53}, "diario": {"2025-11": 100157.85, "2025-12": 99348.19}}};
+const DAILY = {"2025-11-01": 16167.294898999999, "2025-11-02": 34563.88722, "2025-11-03": 43123.225699, "2025-11-04": 48059.189545, "2025-11-05": 47207.114588, "2025-11-06": 32180.080853, "2025-11-07": 25386.025906, "2025-11-08": 27509.657804, "2025-11-09": 50833.506928999996, "2025-11-10": 21693.658542, "2025-11-11": 18043.203529989998, "2025-11-12": 16359.273378, "2025-11-13": 21312.20364, "2025-11-14": 22990.129467, "2025-11-15": 24944.744842, "2025-11-16": 18886.774003, "2025-11-17": 20532.945354, "2025-11-18": 28152.627172, "2025-11-19": 21994.293728, "2025-11-20": 27728.385619, "2025-11-21": 39541.979862, "2025-11-22": 38030.896464, "2025-11-23": 26006.700235, "2025-11-24": 31942.197970999998, "2025-11-25": 46678.048538999996, "2025-11-26": 41264.369571, "2025-11-27": 63937.337799, "2025-11-28": 113009.917477, "2025-11-29": 83214.09791899999, "2025-11-30": 89958.949467, "2025-12-01": 55180.146942, "2025-12-02": 46507.407267999995, "2025-12-03": 55794.255252, "2025-12-04": 52187.391986, "2025-12-05": 59103.723095999994, "2025-12-06": 36115.663669, "2025-12-07": 38739.460887, "2025-12-08": 49048.59961, "2025-12-09": 47648.933944, "2025-12-10": 44459.291793, "2025-12-11": 49641.85828, "2025-12-12": 38488.717267, "2025-12-13": 74528.163262, "2025-12-14": 68188.736037, "2025-12-15": 50084.15317, "2025-12-16": 60063.768958, "2025-12-17": 74696.136005, "2025-12-18": 49730.603724, "2025-12-19": 61842.99066, "2025-12-20": 42495.42992, "2025-12-21": 41187.043079, "2025-12-22": 50209.465195, "2025-12-23": 73931.829115, "2025-12-24": 50493.667284999996, "2025-12-25": 26891.055639, "2025-12-26": 29741.299192, "2025-12-27": 31122.401201, "2025-12-28": 29173.970707, "2025-12-29": 24671.599513999998, "2025-12-30": 35912.969529, "2025-12-31": 23104.57177};
+const COUNTRIES = {"CO": 668856.6062649899, "CR": 88008.6529, "GT": 129761.25247800001, "HN": 63190.015035, "NI": 17841.89304, "Orden": 0.0, "PA": 239463.74, "RD": 596077.95, "SV": 258820.85, "UY": 550217.0622599999};
+const METODOS = {"Método de Pago": 0.0, "addi": 194828.17692999, "bhd_payment_method": 13297.0, "cashondelivery": 331245.540248, "chcybersource": 1002469.534204, "credicorp_clave": 3059.49, "free": 2701.998975, "mercadopago_adbpayment_cc": 436015.53457799996, "mercadopago_adbpayment_checkout_pro": 430798.95009299996, "omnipro_bac_securepayment": 64584.16016, "sistecredito_gateway": 62905.64679, "yappy": 70331.99};
+const FX = {"PA": 1.0, "SV": 1.0, "CO": 0.000237, "CR": 0.00194, "GT": 0.1287, "HN": 0.0399, "NI": 0.0272, "DO": 0.01695, "UY": 0.0237};
+
+function fmt(n){return n.toLocaleString('es',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function cc(n){const m=n.match(/\(([A-Z]{2})\)/);return m?m[1]:'??';}
+
+function init(){
+  const totalUSD = Object.values(BRANCHES).reduce((s,d)=>s+d.total_usd,0);
+  const totalOrd = Object.values(BRANCHES).reduce((s,d)=>s+d.orders,0);
+  document.getElementById('kpiUSD').textContent = '$' + fmt(totalUSD);
+  document.getElementById('kpiOrdenes').textContent = totalOrd.toLocaleString('es');
+  document.getElementById('kpiSuc').textContent = Object.keys(BRANCHES).length + ' sucursales';
+
+  const sorted = Object.entries(BRANCHES).sort((a,b)=>b[1].total_usd-a[1].total_usd).slice(0,15);
+  new Chart(document.getElementById('barChart'),{
+    type:'bar',
+    data:{labels:sorted.map(([n])=>n.split(' (')[0]), datasets:[{data:sorted.map(([,d])=>d.total_usd),backgroundColor:'#6c63ff'}]},
+    options:{indexAxis:'y',plugins:{legend:{display:false}}}
+  });
+
+  new Chart(document.getElementById('donutChart'),{
+    type:'doughnut',
+    data:{labels:Object.keys(METODOS), datasets:[{data:Object.values(METODOS),backgroundColor:['#6c63ff','#00d4aa','#ff6b6b','#ffd166','#a855f7']}]}
+  });
+
+  document.getElementById('tableBody').innerHTML = Object.entries(BRANCHES).sort((a,b)=>b[1].total_usd-a[1].total_usd).map(([n,d])=>{
+    const c = cc(n);
+    return `<tr><td>${n}</td><td style="text-align:right">${fmt(d.total)}</td><td style="text-align:right"><strong>$${fmt(d.total_usd)}</strong></td></tr>`;
+  }).join('');
+}
+
+async function exportPNG(){
+  const btn = document.querySelector('.btn-export');
+  btn.innerHTML = '⏳...';
+  const canvas = await html2canvas(document.body,{scale:2,backgroundColor:'#0d0f1a'});
+  const link = document.createElement('a');
+  link.download = 'Recaudacion_Portatil.png';
+  link.href = canvas.toDataURL();
+  link.click();
+  btn.innerHTML = '📸 Exportar PNG';
+}
+
+init();
+</script>
+</body>
+</html>

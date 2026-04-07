@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Dashboards E-commerce (Versión Portátil)</title>
+    <!-- Use Inter font for modern aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ionicons for simple beautiful icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <style>
+        :root {
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background-image: radial-gradient(circle at top right, #e0e7ff, transparent 400px),
+                              radial-gradient(circle at bottom left, #dcfce7, transparent 400px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(280px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            border-color: var(--primary);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card.sales:hover::before { background: var(--primary); }
+        .card.pnl:hover::before { background: var(--success); }
+        .card.flujo:hover::before { background: var(--warning); }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sales .icon-box { background: #eff6ff; color: #2563eb; }
+        .pnl .icon-box { background: #ecfdf5; color: #10b981; }
+        .flujo .icon-box { background: #fffbeb; color: #f59e0b; }
+
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .sales .card-footer { color: #2563eb; }
+        .pnl .card-footer { color: #10b981; }
+        .flujo .card-footer { color: #f59e0b; }
+
+        .card-footer ion-icon {
+            margin-left: 0.5rem;
+            transition: transform 0.2s;
+        }
+
+        .card:hover .card-footer ion-icon {
+            transform: translateX(4px);
+        }
+        
+        .footer-note {
+            margin-top: 5rem;
+            background: #0f172a;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 1.2rem 2rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2);
+            border-left: 4px solid #ef4444; /* Red accent for confidential/serious */
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-note strong {
+            color: #ef4444;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .footer-note .email-link {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .footer-note .email-link:hover {
+            color: #ffffff;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--text-main);
+            color: white;
+            font-size: 0.7rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Centro de Control E-commerce</h1>
+        <p>Seleccione un módulo analítico portátil para visualizar los resultados consolidados.</p>
+    </div>
+
+    <div class="grid">
+        <!-- Sales Dashboard -->
+        <a href="Reporte_Ventas_Completo.html" class="card sales">
+            <span class="badge">ACTUALIZADO: 7 Abr 2026 09:41</span>
+            <div class="icon-box">
+                <ion-icon name="cart-outline"></ion-icon>
+            </div>
+            <h2>Análisis de Ventas y Picking</h2>
+            <p>Monitoreo diario del rendimiento por país, categorías, método de pago y tasa de cumplimiento logística.</p>
+            <div class="card-footer">
+                Abrir Módulo <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+        </a>
+
+        <!-- P&L Dashboard -->
+        <a href="Estado_Resultados_Portatil.html" class="card pnl">
+            <span class="badge">ACTUALIZADO: 7 Abr 2026 09:41</span>
+            <div class="icon-box">
+                <ion-icon name="podium-outline"></ion-icon>
+            </div>
+            <h2>Estado de Resultados (P&L)</h2>
+            <p>Análisis financiero integral comparativo contra presupuesto. Cascada de rentabilidad, EBITDA y márgenes.</p>
+            <div class="card-footer">
+                Abrir Módulo <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+        </a>
+
+        <!-- Flujo Dashboard -->
+        <a href="Recaudacion_Portatil.html" class="card flujo">
+            <span class="badge">ACTUALIZADO: 7 Abr 2026 09:41</span>
+            <div class="icon-box">
+                <ion-icon name="cash-outline"></ion-icon>
+            </div>
+            <h2>Flujo Financiero / Recaudación</h2>
+            <p>Análisis de recaudación multi-moneda, proyecciones de flujo y control transversal de ingresos.</p>
+            <div class="card-footer">
+                Abrir Módulo <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+
+    <div class="footer-note">
+        <strong>StandAlone (Portátil)</strong>
+        <span>|</span>
+        <span>REPORTE ESTRICTAMENTE CONFIDENCIAL</span>
+        <span>|</span>
+        <span>Autorizado: <a href="mailto:marlenis.ortega@sportline.com.pa" class="email-link">marlenis.ortega@sportline.com.pa</a> ✉️</span>
+    </div>
+
+</body>
+
+</html>
