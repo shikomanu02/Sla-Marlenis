@@ -1,0 +1,2547 @@
+{
+  "total_orders": 43409,
+  "total_items": 61350,
+  "total_revenue_usd": 2066983.9447048,
+  "avg_order_value_usd": 73.16239362539997,
+  "monthly_variation": {
+    "current_month": "2025-12",
+    "previous_month": "2025-11",
+    "current_orders": 24475,
+    "current_revenue": 1110291.94618,
+    "current_avg_order_value": 72.52543903455484,
+    "current_delivery_rate": 79.5419643453295,
+    "current_cancellation_rate": 38.806945863125634,
+    "current_cycle_time": 1.5015701802293828,
+    "previous_orders": 18933,
+    "previous_revenue": 956691.9985248,
+    "previous_avg_order_value": 73.92149579082059,
+    "orders_change_pct": 29.27164210637511,
+    "revenue_change_pct": 16.05531852383506,
+    "avg_order_value_change_pct": -1.8885667035421507,
+    "orders_change_abs": 5542,
+    "revenue_change_abs": 153599.94765520003,
+    "avg_order_value_change_abs": -1.3960567562657502,
+    "delivery_rate_change": 23.67551713159802,
+    "cancellation_rate_change": 6.197216818600204,
+    "cycle_time_change_pct": 2.5307082043852827
+  },
+  "delivery_success_rate": 79.5419643453295,
+  "delivered_orders": 11913,
+  "non_cancelled_orders": 14977,
+  "by_status": [
+    {
+      "Estado": "Cancelado",
+      "Num_Ordenes": 9498,
+      "Revenue_USD": 796056.26962
+    },
+    {
+      "Estado": "En ruta",
+      "Num_Ordenes": 1897,
+      "Revenue_USD": 130325.28481000001
+    },
+    {
+      "Estado": "Entregado",
+      "Num_Ordenes": 3200,
+      "Revenue_USD": 243684.08083
+    },
+    {
+      "Estado": "Entregado a Cliente",
+      "Num_Ordenes": 8715,
+      "Revenue_USD": 634846.0021
+    },
+    {
+      "Estado": "Listo Retiro PET",
+      "Num_Ordenes": 37,
+      "Revenue_USD": 1321.2883199999999
+    },
+    {
+      "Estado": "Packing - Domicilio",
+      "Num_Ordenes": 40,
+      "Revenue_USD": 2371.9438
+    },
+    {
+      "Estado": "Packing PW-Retiro",
+      "Num_Ordenes": 15,
+      "Revenue_USD": 1224.5140999999999
+    },
+    {
+      "Estado": "Pago Verificado",
+      "Num_Ordenes": 287,
+      "Revenue_USD": 14376.357979999999
+    },
+    {
+      "Estado": "Pendiente COD",
+      "Num_Ordenes": 85,
+      "Revenue_USD": 5111.341359999999
+    },
+    {
+      "Estado": "Pendiente Pago Verificado",
+      "Num_Ordenes": 6,
+      "Revenue_USD": 396.66999999999996
+    },
+    {
+      "Estado": "Pendiente Retiro PT",
+      "Num_Ordenes": 346,
+      "Revenue_USD": 20464.30474
+    },
+    {
+      "Estado": "Pendiente Retiro Shipper",
+      "Num_Ordenes": 413,
+      "Revenue_USD": 27200.6049
+    },
+    {
+      "Estado": "Pendiente Retiro en Tienda PW-Retiro",
+      "Num_Ordenes": 457,
+      "Revenue_USD": 28969.553239999997
+    }
+  ],
+  "by_country": [
+    {
+      "Pais": "CO",
+      "Moneda": "COP",
+      "Num_Ordenes": 5233,
+      "Revenue_Local": 1679528310.0,
+      "Revenue_USD": 403086.7944
+    },
+    {
+      "Pais": "UY",
+      "Moneda": "UYU",
+      "Num_Ordenes": 3266,
+      "Revenue_Local": 10332309.23,
+      "Revenue_USD": 258307.73075
+    },
+    {
+      "Pais": "PA",
+      "Moneda": "USD",
+      "Num_Ordenes": 1914,
+      "Revenue_Local": 131337.94,
+      "Revenue_USD": 131337.94
+    },
+    {
+      "Pais": "SV",
+      "Moneda": "USD",
+      "Num_Ordenes": 1651,
+      "Revenue_Local": 125353.16,
+      "Revenue_USD": 125353.16
+    },
+    {
+      "Pais": "GT",
+      "Moneda": "GTQ",
+      "Num_Ordenes": 1105,
+      "Revenue_Local": 608835.8999999999,
+      "Revenue_USD": 77930.9952
+    },
+    {
+      "Pais": "CR",
+      "Moneda": "CRC",
+      "Num_Ordenes": 777,
+      "Revenue_Local": 24441185.0,
+      "Revenue_USD": 48882.369999999995
+    },
+    {
+      "Pais": "HN",
+      "Moneda": "HNL",
+      "Num_Ordenes": 984,
+      "Revenue_Local": 1187486.63,
+      "Revenue_USD": 47499.465200000006
+    },
+    {
+      "Pais": "NI",
+      "Moneda": "NIO",
+      "Num_Ordenes": 286,
+      "Revenue_Local": 419171.69,
+      "Revenue_USD": 11317.635629999999
+    },
+    {
+      "Pais": "RD",
+      "Moneda": "DOP",
+      "Num_Ordenes": 93,
+      "Revenue_Local": 386815.0,
+      "Revenue_USD": 6575.855
+    }
+  ],
+  "top_cities_by_country": [
+    {
+      "Pais": "UY",
+      "Ciudad": "Montevideo",
+      "Num_Ordenes": 2099,
+      "Revenue_USD": 160712.61675
+    },
+    {
+      "Pais": "CO",
+      "Ciudad": "Antioquia",
+      "Num_Ordenes": 1608,
+      "Revenue_USD": 126512.3928
+    },
+    {
+      "Pais": "PA",
+      "Ciudad": "Panama",
+      "Num_Ordenes": 1369,
+      "Revenue_USD": 93343.16
+    },
+    {
+      "Pais": "SV",
+      "Ciudad": "San Salvador",
+      "Num_Ordenes": 876,
+      "Revenue_USD": 62151.76
+    },
+    {
+      "Pais": "GT",
+      "Ciudad": "Guatemala",
+      "Num_Ordenes": 658,
+      "Revenue_USD": 40486.62528
+    },
+    {
+      "Pais": "HN",
+      "Ciudad": "Francisco Morazán",
+      "Num_Ordenes": 456,
+      "Revenue_USD": 21182.894
+    },
+    {
+      "Pais": "CR",
+      "Ciudad": "San José",
+      "Num_Ordenes": 262,
+      "Revenue_USD": 16459.730000000003
+    },
+    {
+      "Pais": "NI",
+      "Ciudad": "Managua",
+      "Num_Ordenes": 244,
+      "Revenue_USD": 9610.6581
+    },
+    {
+      "Pais": "RD",
+      "Ciudad": "Distrito Nacional",
+      "Num_Ordenes": 70,
+      "Revenue_USD": 4710.173000000001
+    }
+  ],
+  "by_store": [
+    {
+      "Tienda": "SLA CO",
+      "Num_Ordenes": 4024,
+      "Revenue_USD": 258107.16480000003
+    },
+    {
+      "Tienda": "CANCHA UY",
+      "Num_Ordenes": 2521,
+      "Revenue_USD": 184302.55299999999
+    },
+    {
+      "Tienda": "KICKS CO",
+      "Num_Ordenes": 1209,
+      "Revenue_USD": 144979.6296
+    },
+    {
+      "Tienda": "SLA PA",
+      "Num_Ordenes": 1667,
+      "Revenue_USD": 101356.67
+    },
+    {
+      "Tienda": "SLA SV",
+      "Num_Ordenes": 1418,
+      "Revenue_USD": 99348.19
+    },
+    {
+      "Tienda": "KICKS UY",
+      "Num_Ordenes": 745,
+      "Revenue_USD": 74005.17775
+    },
+    {
+      "Tienda": "SLA GT",
+      "Num_Ordenes": 926,
+      "Revenue_USD": 53944.81536
+    },
+    {
+      "Tienda": "SLA HN",
+      "Num_Ordenes": 926,
+      "Revenue_USD": 42292.5848
+    },
+    {
+      "Tienda": "SLA CR",
+      "Num_Ordenes": 643,
+      "Revenue_USD": 34758.880000000005
+    },
+    {
+      "Tienda": "KICKS SV",
+      "Num_Ordenes": 233,
+      "Revenue_USD": 26004.97
+    },
+    {
+      "Tienda": "KICKS PA",
+      "Num_Ordenes": 179,
+      "Revenue_USD": 25787.46
+    },
+    {
+      "Tienda": "KICKS GT",
+      "Num_Ordenes": 179,
+      "Revenue_USD": 23986.17984
+    },
+    {
+      "Tienda": "KICKS CR",
+      "Num_Ordenes": 134,
+      "Revenue_USD": 14123.49
+    },
+    {
+      "Tienda": "SLA NI",
+      "Num_Ordenes": 248,
+      "Revenue_USD": 8933.35473
+    },
+    {
+      "Tienda": "SLA RD",
+      "Num_Ordenes": 86,
+      "Revenue_USD": 5350.75
+    },
+    {
+      "Tienda": "KICKS HN",
+      "Num_Ordenes": 58,
+      "Revenue_USD": 5206.880400000001
+    },
+    {
+      "Tienda": "Converse PA",
+      "Num_Ordenes": 68,
+      "Revenue_USD": 4193.81
+    },
+    {
+      "Tienda": "KICKS NI",
+      "Num_Ordenes": 38,
+      "Revenue_USD": 2384.2808999999997
+    },
+    {
+      "Tienda": "KICKS RD",
+      "Num_Ordenes": 7,
+      "Revenue_USD": 1225.105
+    }
+  ],
+  "by_payment": [
+    {
+      "Metodo_Pago": "chcybersource",
+      "Num_Ordenes": 4785,
+      "Revenue_USD": 335533.43903
+    },
+    {
+      "Metodo_Pago": "mercadopago_adbpayment_checkout_pro",
+      "Num_Ordenes": 3294,
+      "Revenue_USD": 252193.12945
+    },
+    {
+      "Metodo_Pago": "mercadopago_adbpayment_cc",
+      "Num_Ordenes": 2479,
+      "Revenue_USD": 203242.9905
+    },
+    {
+      "Metodo_Pago": "addi",
+      "Num_Ordenes": 1392,
+      "Revenue_USD": 113835.82800000001
+    },
+    {
+      "Metodo_Pago": "cashondelivery",
+      "Num_Ordenes": 1481,
+      "Revenue_USD": 89248.81075
+    },
+    {
+      "Metodo_Pago": "yappy",
+      "Num_Ordenes": 576,
+      "Revenue_USD": 41773.71000000001
+    },
+    {
+      "Metodo_Pago": "sistecredito_gateway",
+      "Num_Ordenes": 465,
+      "Revenue_USD": 37473.288
+    },
+    {
+      "Metodo_Pago": "omnipro_bac_securepayment",
+      "Num_Ordenes": 376,
+      "Revenue_USD": 33678.77095
+    },
+    {
+      "Metodo_Pago": "credicorp_clave",
+      "Num_Ordenes": 23,
+      "Revenue_USD": 1806.34
+    },
+    {
+      "Metodo_Pago": "free",
+      "Num_Ordenes": 436,
+      "Revenue_USD": 1373.0735
+    },
+    {
+      "Metodo_Pago": "bhd_payment_method",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 132.566
+    }
+  ],
+  "by_brand": [
+    {
+      "Marca": "NIKE",
+      "Unidades_Vendidas": 9144.0,
+      "Revenue_USD": 598293.6097
+    },
+    {
+      "Marca": "ADIDAS",
+      "Unidades_Vendidas": 3337.0,
+      "Revenue_USD": 207062.57904
+    },
+    {
+      "Marca": "JORDAN",
+      "Unidades_Vendidas": 1829.0,
+      "Revenue_USD": 119820.02864
+    },
+    {
+      "Marca": "ON",
+      "Unidades_Vendidas": 516.0,
+      "Revenue_USD": 93223.97495
+    },
+    {
+      "Marca": "PUMA",
+      "Unidades_Vendidas": 1497.0,
+      "Revenue_USD": 71234.83789
+    },
+    {
+      "Marca": "CONVERSE",
+      "Unidades_Vendidas": 736.0,
+      "Revenue_USD": 31214.05078
+    },
+    {
+      "Marca": "UNDER ARMOUR",
+      "Unidades_Vendidas": 734.0,
+      "Revenue_USD": 30013.15398
+    },
+    {
+      "Marca": "NEW BALANCE",
+      "Unidades_Vendidas": 218.0,
+      "Revenue_USD": 24429.17829
+    },
+    {
+      "Marca": "UMBRO",
+      "Unidades_Vendidas": 435.0,
+      "Revenue_USD": 17609.68591
+    },
+    {
+      "Marca": "PEÑAROL",
+      "Unidades_Vendidas": 186.0,
+      "Revenue_USD": 9406.0335
+    },
+    {
+      "Marca": "TIFFOSI",
+      "Unidades_Vendidas": 243.0,
+      "Revenue_USD": 8236.22925
+    },
+    {
+      "Marca": "HOKA",
+      "Unidades_Vendidas": 52.0,
+      "Revenue_USD": 7576.62212
+    },
+    {
+      "Marca": "NACIONAL",
+      "Unidades_Vendidas": 134.0,
+      "Revenue_USD": 6867.77925
+    },
+    {
+      "Marca": "VEJA",
+      "Unidades_Vendidas": 32.0,
+      "Revenue_USD": 6172.43485
+    },
+    {
+      "Marca": "FILA",
+      "Unidades_Vendidas": 203.0,
+      "Revenue_USD": 6146.59609
+    },
+    {
+      "Marca": "JOMA",
+      "Unidades_Vendidas": 269.0,
+      "Revenue_USD": 5174.24118
+    },
+    {
+      "Marca": "LICENCIAS",
+      "Unidades_Vendidas": 211.0,
+      "Revenue_USD": 4878.27753
+    },
+    {
+      "Marca": "ZTEK",
+      "Unidades_Vendidas": 228.0,
+      "Revenue_USD": 3485.3401400000002
+    },
+    {
+      "Marca": "SWISSBRAND",
+      "Unidades_Vendidas": 112.0,
+      "Revenue_USD": 2278.97285
+    },
+    {
+      "Marca": "SAPRISSA",
+      "Unidades_Vendidas": 37.0,
+      "Revenue_USD": 1954.1
+    },
+    {
+      "Marca": "RIPNDIP",
+      "Unidades_Vendidas": 87.0,
+      "Revenue_USD": 1894.2629000000002
+    },
+    {
+      "Marca": "SAUCONY",
+      "Unidades_Vendidas": 32.0,
+      "Revenue_USD": 1348.0744
+    },
+    {
+      "Marca": "2XU",
+      "Unidades_Vendidas": 39.0,
+      "Revenue_USD": 1198.92264
+    },
+    {
+      "Marca": "NEW ERA",
+      "Unidades_Vendidas": 19.0,
+      "Revenue_USD": 1012.97225
+    },
+    {
+      "Marca": "CROCS",
+      "Unidades_Vendidas": 19.0,
+      "Revenue_USD": 806.896
+    },
+    {
+      "Marca": "NBA",
+      "Unidades_Vendidas": 41.0,
+      "Revenue_USD": 769.16192
+    },
+    {
+      "Marca": "BIRKENSTOCK",
+      "Unidades_Vendidas": 6.0,
+      "Revenue_USD": 758.256
+    },
+    {
+      "Marca": "HURLEY",
+      "Unidades_Vendidas": 70.0,
+      "Revenue_USD": 677.2293
+    },
+    {
+      "Marca": "SPALDING",
+      "Unidades_Vendidas": 25.0,
+      "Revenue_USD": 585.00784
+    },
+    {
+      "Marca": "ASICS",
+      "Unidades_Vendidas": 3.0,
+      "Revenue_USD": 423.19360000000006
+    },
+    {
+      "Marca": "KICKSLAB",
+      "Unidades_Vendidas": 17.0,
+      "Revenue_USD": 422.186
+    },
+    {
+      "Marca": "JACK & JONES",
+      "Unidades_Vendidas": 20.0,
+      "Revenue_USD": 374.788
+    },
+    {
+      "Marca": "MESSI",
+      "Unidades_Vendidas": 28.0,
+      "Revenue_USD": 358.12851
+    },
+    {
+      "Marca": "MARTHA",
+      "Unidades_Vendidas": 8.0,
+      "Revenue_USD": 303.9375
+    },
+    {
+      "Marca": "ONLY",
+      "Unidades_Vendidas": 22.0,
+      "Revenue_USD": 272.95576
+    },
+    {
+      "Marca": "MLB",
+      "Unidades_Vendidas": 14.0,
+      "Revenue_USD": 272.15866
+    },
+    {
+      "Marca": "RIDER",
+      "Unidades_Vendidas": 18.0,
+      "Revenue_USD": 255.42906
+    },
+    {
+      "Marca": "SANTA CRUZ",
+      "Unidades_Vendidas": 7.0,
+      "Revenue_USD": 243.375
+    },
+    {
+      "Marca": "3BRAND",
+      "Unidades_Vendidas": 20.0,
+      "Revenue_USD": 228.6036
+    },
+    {
+      "Marca": "JANSPORT",
+      "Unidades_Vendidas": 4.0,
+      "Revenue_USD": 209.5875
+    },
+    {
+      "Marca": "SPRAYGROUND",
+      "Unidades_Vendidas": 2.0,
+      "Revenue_USD": 197.50672
+    },
+    {
+      "Marca": "MERRELL",
+      "Unidades_Vendidas": 4.0,
+      "Revenue_USD": 147.88933
+    },
+    {
+      "Marca": "GOORIN BROS",
+      "Unidades_Vendidas": 4.0,
+      "Revenue_USD": 127.2
+    },
+    {
+      "Marca": "WILSON",
+      "Unidades_Vendidas": 6.0,
+      "Revenue_USD": 102.65
+    },
+    {
+      "Marca": "GUESS",
+      "Unidades_Vendidas": 2.0,
+      "Revenue_USD": 82.78960000000001
+    },
+    {
+      "Marca": "MITCHELL & NESS",
+      "Unidades_Vendidas": 2.0,
+      "Revenue_USD": 79.85
+    },
+    {
+      "Marca": "KEDS",
+      "Unidades_Vendidas": 2.0,
+      "Revenue_USD": 69.98
+    },
+    {
+      "Marca": "COLUMBIA",
+      "Unidades_Vendidas": 1.0,
+      "Revenue_USD": 67.176
+    },
+    {
+      "Marca": "ALTRA",
+      "Unidades_Vendidas": 1.0,
+      "Revenue_USD": 63.9996
+    },
+    {
+      "Marca": "RESHOEVN8R",
+      "Unidades_Vendidas": 5.0,
+      "Revenue_USD": 62.3376
+    },
+    {
+      "Marca": "47BRANDS",
+      "Unidades_Vendidas": 2.0,
+      "Revenue_USD": 52.78172000000001
+    },
+    {
+      "Marca": "CUBITT",
+      "Unidades_Vendidas": 3.0,
+      "Revenue_USD": 51.1576
+    },
+    {
+      "Marca": "ONLY PLAY",
+      "Unidades_Vendidas": 6.0,
+      "Revenue_USD": 34.338
+    },
+    {
+      "Marca": "DROP SHOT",
+      "Unidades_Vendidas": 1.0,
+      "Revenue_USD": 26.7996
+    }
+  ],
+  "by_product_type": [
+    {
+      "Tipo_Producto": "calzados",
+      "Unidades_Vendidas": 11398.0,
+      "Revenue_USD": 965958.1149800001
+    },
+    {
+      "Tipo_Producto": "ropa",
+      "Unidades_Vendidas": 6988.0,
+      "Revenue_USD": 247174.10347
+    },
+    {
+      "Tipo_Producto": "accesorios",
+      "Unidades_Vendidas": 2311.0,
+      "Revenue_USD": 55566.1147
+    }
+  ],
+  "by_gender": [
+    {
+      "Genero": "Masculino",
+      "Unidades_Vendidas": 10214.0,
+      "Revenue_USD": 749318.44427
+    },
+    {
+      "Genero": "Femenino",
+      "Unidades_Vendidas": 4155.0,
+      "Revenue_USD": 308610.68104
+    },
+    {
+      "Genero": "Nino/Nina",
+      "Unidades_Vendidas": 1638.0,
+      "Revenue_USD": 76369.11886
+    },
+    {
+      "Genero": "Unisex",
+      "Unidades_Vendidas": 2240.0,
+      "Revenue_USD": 66675.96744000001
+    },
+    {
+      "Genero": "Ninos",
+      "Unidades_Vendidas": 1675.0,
+      "Revenue_USD": 45784.93597
+    },
+    {
+      "Genero": "Ninas",
+      "Unidades_Vendidas": 701.0,
+      "Revenue_USD": 19157.45041
+    },
+    {
+      "Genero": "Hombre",
+      "Unidades_Vendidas": 48.0,
+      "Revenue_USD": 1601.01406
+    },
+    {
+      "Genero": "Mujer",
+      "Unidades_Vendidas": 22.0,
+      "Revenue_USD": 1074.0961
+    },
+    {
+      "Genero": "femenino",
+      "Unidades_Vendidas": 4.0,
+      "Revenue_USD": 106.625
+    }
+  ],
+  "daily_trend": [
+    {
+      "Fecha": "2025-12-01",
+      "Num_Ordenes": 657,
+      "Revenue_USD": 45754.092780000006
+    },
+    {
+      "Fecha": "2025-12-02",
+      "Num_Ordenes": 470,
+      "Revenue_USD": 30671.393949999998
+    },
+    {
+      "Fecha": "2025-12-03",
+      "Num_Ordenes": 450,
+      "Revenue_USD": 36800.26867
+    },
+    {
+      "Fecha": "2025-12-04",
+      "Num_Ordenes": 479,
+      "Revenue_USD": 32846.93826
+    },
+    {
+      "Fecha": "2025-12-05",
+      "Num_Ordenes": 596,
+      "Revenue_USD": 42966.07328
+    },
+    {
+      "Fecha": "2025-12-06",
+      "Num_Ordenes": 359,
+      "Revenue_USD": 25641.15419
+    },
+    {
+      "Fecha": "2025-12-07",
+      "Num_Ordenes": 404,
+      "Revenue_USD": 28819.15137
+    },
+    {
+      "Fecha": "2025-12-08",
+      "Num_Ordenes": 564,
+      "Revenue_USD": 42398.023369999995
+    },
+    {
+      "Fecha": "2025-12-09",
+      "Num_Ordenes": 579,
+      "Revenue_USD": 40541.71561
+    },
+    {
+      "Fecha": "2025-12-10",
+      "Num_Ordenes": 634,
+      "Revenue_USD": 44560.00121
+    },
+    {
+      "Fecha": "2025-12-11",
+      "Num_Ordenes": 616,
+      "Revenue_USD": 42584.19102
+    },
+    {
+      "Fecha": "2025-12-12",
+      "Num_Ordenes": 571,
+      "Revenue_USD": 39492.1215
+    },
+    {
+      "Fecha": "2025-12-13",
+      "Num_Ordenes": 665,
+      "Revenue_USD": 58129.96265
+    },
+    {
+      "Fecha": "2025-12-14",
+      "Num_Ordenes": 803,
+      "Revenue_USD": 57907.227530000004
+    },
+    {
+      "Fecha": "2025-12-15",
+      "Num_Ordenes": 679,
+      "Revenue_USD": 50708.24383
+    },
+    {
+      "Fecha": "2025-12-16",
+      "Num_Ordenes": 685,
+      "Revenue_USD": 52538.77120999999
+    },
+    {
+      "Fecha": "2025-12-17",
+      "Num_Ordenes": 694,
+      "Revenue_USD": 48791.16664
+    },
+    {
+      "Fecha": "2025-12-18",
+      "Num_Ordenes": 635,
+      "Revenue_USD": 44558.06769
+    },
+    {
+      "Fecha": "2025-12-19",
+      "Num_Ordenes": 590,
+      "Revenue_USD": 44148.34074
+    },
+    {
+      "Fecha": "2025-12-20",
+      "Num_Ordenes": 516,
+      "Revenue_USD": 38967.773570000005
+    },
+    {
+      "Fecha": "2025-12-21",
+      "Num_Ordenes": 495,
+      "Revenue_USD": 37225.014390000004
+    },
+    {
+      "Fecha": "2025-12-22",
+      "Num_Ordenes": 552,
+      "Revenue_USD": 39622.17553000001
+    },
+    {
+      "Fecha": "2025-12-23",
+      "Num_Ordenes": 461,
+      "Revenue_USD": 34365.96799999999
+    },
+    {
+      "Fecha": "2025-12-24",
+      "Num_Ordenes": 289,
+      "Revenue_USD": 20972.14757
+    },
+    {
+      "Fecha": "2025-12-25",
+      "Num_Ordenes": 220,
+      "Revenue_USD": 16795.91248
+    },
+    {
+      "Fecha": "2025-12-26",
+      "Num_Ordenes": 329,
+      "Revenue_USD": 22338.712310000003
+    },
+    {
+      "Fecha": "2025-12-27",
+      "Num_Ordenes": 244,
+      "Revenue_USD": 16468.70929
+    },
+    {
+      "Fecha": "2025-12-28",
+      "Num_Ordenes": 251,
+      "Revenue_USD": 17267.53913
+    },
+    {
+      "Fecha": "2025-12-29",
+      "Num_Ordenes": 267,
+      "Revenue_USD": 18277.90592
+    },
+    {
+      "Fecha": "2025-12-30",
+      "Num_Ordenes": 310,
+      "Revenue_USD": 19673.236810000002
+    },
+    {
+      "Fecha": "2025-12-31",
+      "Num_Ordenes": 288,
+      "Revenue_USD": 18459.94568
+    }
+  ],
+  "top_products": [
+    {
+      "Producto": "Zapatillas Air Jordan 11 Retro de Hombre",
+      "Unidades_Vendidas": 55.0,
+      "Revenue_USD": 16898.3888
+    },
+    {
+      "Producto": "Zapatillas Air Jordan 1 Low de Hombre",
+      "Unidades_Vendidas": 88.0,
+      "Revenue_USD": 11050.32523
+    },
+    {
+      "Producto": "Zapatillas Nike V5 Rnr de Hombre",
+      "Unidades_Vendidas": 89.0,
+      "Revenue_USD": 9800.188400000001
+    },
+    {
+      "Producto": "Camiseta Atlético Nacional Away Stadium Jersey 2025 de Hombre",
+      "Unidades_Vendidas": 157.0,
+      "Revenue_USD": 9039.432
+    },
+    {
+      "Producto": "Zapatillas Nike P-6000 de Hombre",
+      "Unidades_Vendidas": 62.0,
+      "Revenue_USD": 8270.83893
+    },
+    {
+      "Producto": "Zapatillas Nike Court Vision Lo de Hombre",
+      "Unidades_Vendidas": 91.0,
+      "Revenue_USD": 7853.58906
+    },
+    {
+      "Producto": "Zapatillas Air Force 1 '07 De Hombre",
+      "Unidades_Vendidas": 49.0,
+      "Revenue_USD": 7604.27236
+    },
+    {
+      "Producto": "Polo Olimpia Lifestyle de Hombre",
+      "Unidades_Vendidas": 143.0,
+      "Revenue_USD": 7236.834
+    },
+    {
+      "Producto": "Zapatillas Air Jordan 1 Mid Se de Hombre",
+      "Unidades_Vendidas": 62.0,
+      "Revenue_USD": 6893.0652
+    },
+    {
+      "Producto": "Zapatillas Nike V5 Rnr de Mujer",
+      "Unidades_Vendidas": 60.0,
+      "Revenue_USD": 6488.6911
+    },
+    {
+      "Producto": "Zapatillas Air Jordan 1 Mid de Hombre",
+      "Unidades_Vendidas": 55.0,
+      "Revenue_USD": 6124.61783
+    },
+    {
+      "Producto": "Zapatillas Nike Dunk Low Retro de Hombre",
+      "Unidades_Vendidas": 38.0,
+      "Revenue_USD": 5731.53873
+    },
+    {
+      "Producto": "Zapatillas Nike Dunk Low Retro Se de Hombre",
+      "Unidades_Vendidas": 47.0,
+      "Revenue_USD": 5579.4555
+    },
+    {
+      "Producto": "Zapatillas Nike Court Vision Low de Hombre",
+      "Unidades_Vendidas": 66.0,
+      "Revenue_USD": 5372.21402
+    },
+    {
+      "Producto": "Zapatillas Cloud 6 de Hombre",
+      "Unidades_Vendidas": 26.0,
+      "Revenue_USD": 4741.70722
+    },
+    {
+      "Producto": "Zapatillas Nike Journey Run de Hombre",
+      "Unidades_Vendidas": 45.0,
+      "Revenue_USD": 4613.7078
+    },
+    {
+      "Producto": "Camiseta Atlético Nacional Home Stadium Jersey 2025 de Hombre",
+      "Unidades_Vendidas": 80.0,
+      "Revenue_USD": 4606.08
+    },
+    {
+      "Producto": "Zapatillas Air Jordan 1 Low de Mujer",
+      "Unidades_Vendidas": 41.0,
+      "Revenue_USD": 4506.57633
+    },
+    {
+      "Producto": "Zapatillas Cloud 6 de Mujer",
+      "Unidades_Vendidas": 24.0,
+      "Revenue_USD": 4478.2721
+    },
+    {
+      "Producto": "Zapatillas Samba Og de Mujer",
+      "Unidades_Vendidas": 32.0,
+      "Revenue_USD": 4456.72475
+    }
+  ],
+  "by_delivery": [
+    {
+      "Metodo_Entrega": "Envío Domicilio CO",
+      "Num_Ordenes": 4660,
+      "Revenue_USD": 357434.5536
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio UY La Cancha",
+      "Num_Ordenes": 1782,
+      "Revenue_USD": 132866.4555
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio SV",
+      "Num_Ordenes": 735,
+      "Revenue_USD": 62815.850000000006
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio GT",
+      "Num_Ordenes": 833,
+      "Revenue_USD": 60452.37504
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio PA",
+      "Num_Ordenes": 863,
+      "Revenue_USD": 60004.37
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio UY Kicks",
+      "Num_Ordenes": 504,
+      "Revenue_USD": 50276.82775
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio HN",
+      "Num_Ordenes": 610,
+      "Revenue_USD": 32498.0264
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio CR",
+      "Num_Ordenes": 470,
+      "Revenue_USD": 30466.729999999996
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Nuevocentro (UY)",
+      "Num_Ordenes": 159,
+      "Revenue_USD": 15562.184000000001
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Nuevocentro (UY) (900005)",
+      "Num_Ordenes": 210,
+      "Revenue_USD": 14146.25
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Tres Cruces (UY) (900006)",
+      "Num_Ordenes": 199,
+      "Revenue_USD": 13887.5725
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Montevideo Shopping (UY) (900001)",
+      "Num_Ordenes": 204,
+      "Revenue_USD": 13881.044750000001
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Metrosur (SV)",
+      "Num_Ordenes": 206,
+      "Revenue_USD": 11510.449999999999
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Multiplaza (PA)",
+      "Num_Ordenes": 143,
+      "Revenue_USD": 10444.740000000002
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Portones (UY) (900002)",
+      "Num_Ordenes": 127,
+      "Revenue_USD": 9521.230249999999
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Multiplaza (SV)",
+      "Num_Ordenes": 117,
+      "Revenue_USD": 9504.930000000002
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Albrook Mall (PA)",
+      "Num_Ordenes": 55,
+      "Revenue_USD": 9017.93
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Montevideo (UY)",
+      "Num_Ordenes": 83,
+      "Revenue_USD": 8166.166
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Metromall (PA)",
+      "Num_Ordenes": 153,
+      "Revenue_USD": 7728.12
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Multiplaza (PA)",
+      "Num_Ordenes": 68,
+      "Revenue_USD": 7358.35
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Westland (PA)",
+      "Num_Ordenes": 142,
+      "Revenue_USD": 7358.15
+    },
+    {
+      "Metodo_Entrega": "Tienda Outlet Galerías (SV)",
+      "Num_Ordenes": 109,
+      "Revenue_USD": 6128.829999999999
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Bambú (SV)",
+      "Num_Ordenes": 62,
+      "Revenue_USD": 5993.059999999999
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Metrocentro (SV)",
+      "Num_Ordenes": 95,
+      "Revenue_USD": 5837.419999999998
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Alta Plaza (PA)",
+      "Num_Ordenes": 74,
+      "Revenue_USD": 5371.85
+    },
+    {
+      "Metodo_Entrega": "Sportline Plaza Mundo (SV)",
+      "Num_Ordenes": 89,
+      "Revenue_USD": 5145.360000000001
+    },
+    {
+      "Metodo_Entrega": "Sportline El Dorado (PA)",
+      "Num_Ordenes": 102,
+      "Revenue_USD": 4791.3
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Oakland (GT)",
+      "Num_Ordenes": 75,
+      "Revenue_USD": 4390.72128
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Calle82 (CO)",
+      "Num_Ordenes": 31,
+      "Revenue_USD": 3802.956
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio NI",
+      "Num_Ordenes": 86,
+      "Revenue_USD": 3708.29043
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Albrook Mall (PA)",
+      "Num_Ordenes": 59,
+      "Revenue_USD": 3625.0499999999997
+    },
+    {
+      "Metodo_Entrega": "Sportline Outlet Plaza El Establo (NI)",
+      "Num_Ordenes": 97,
+      "Revenue_USD": 3472.06743
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Titan Plaza (CO)",
+      "Num_Ordenes": 49,
+      "Revenue_USD": 3261.8520000000003
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline City Mall (CR)",
+      "Num_Ordenes": 52,
+      "Revenue_USD": 3206.9500000000007
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Plaza Mundo (SV)",
+      "Num_Ordenes": 30,
+      "Revenue_USD": 3191.1699999999983
+    },
+    {
+      "Metodo_Entrega": "Sportline Avenida Central (CR)",
+      "Num_Ordenes": 74,
+      "Revenue_USD": 3097.9900000000002
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Los Molinos (CO)",
+      "Num_Ordenes": 37,
+      "Revenue_USD": 2836.1639999999998
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks La Gran Vía (SV)",
+      "Num_Ordenes": 21,
+      "Revenue_USD": 2784.3899999999994
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Viva Envigado (CO)",
+      "Num_Ordenes": 19,
+      "Revenue_USD": 2650.512
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio DO",
+      "Num_Ordenes": 39,
+      "Revenue_USD": 2450.312
+    },
+    {
+      "Metodo_Entrega": "Sportline La Gran Vía (SV)",
+      "Num_Ordenes": 37,
+      "Revenue_USD": 2449.5099999999993
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline City Mall Tegucigalpa (HN)",
+      "Num_Ordenes": 54,
+      "Revenue_USD": 2373.5492
+    },
+    {
+      "Metodo_Entrega": "Sportline Los Andes Mall (PA)",
+      "Num_Ordenes": 50,
+      "Revenue_USD": 2266.49
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Chiriquí Mall (PA)",
+      "Num_Ordenes": 22,
+      "Revenue_USD": 2242.44
+    },
+    {
+      "Metodo_Entrega": "Sportline Mega Mall (HN)",
+      "Num_Ordenes": 62,
+      "Revenue_USD": 2197.2824000000005
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Arkadia (CO)",
+      "Num_Ordenes": 19,
+      "Revenue_USD": 2165.664
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline paseo de las flores (CR)",
+      "Num_Ordenes": 29,
+      "Revenue_USD": 2099.23
+    },
+    {
+      "Metodo_Entrega": "Kicks Lincoln (CR)",
+      "Num_Ordenes": 22,
+      "Revenue_USD": 2051.8300000000004
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Multiplaza Escazú (CR)",
+      "Num_Ordenes": 15,
+      "Revenue_USD": 2023.8200000000006
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Metrocentro (SV)",
+      "Num_Ordenes": 21,
+      "Revenue_USD": 1984.5
+    },
+    {
+      "Metodo_Entrega": "Sportline Centro Histórico (SV)",
+      "Num_Ordenes": 36,
+      "Revenue_USD": 1965.14
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Santafé (CO)",
+      "Num_Ordenes": 22,
+      "Revenue_USD": 1931.6280000000002
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Parque La Colina (CO)",
+      "Num_Ordenes": 15,
+      "Revenue_USD": 1877.7528
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Miraflores (GT)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 1852.7347200000002
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Centro Mayor (CO)",
+      "Num_Ordenes": 28,
+      "Revenue_USD": 1774.3200000000002
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA City Mall SPS (HN)",
+      "Num_Ordenes": 40,
+      "Revenue_USD": 1765.7495999999999
+    },
+    {
+      "Metodo_Entrega": "Sportline Plaza Mundo Apopa (SV)",
+      "Num_Ordenes": 35,
+      "Revenue_USD": 1722.43
+    },
+    {
+      "Metodo_Entrega": "Kicks Cayala (GT)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 1702.34112
+    },
+    {
+      "Metodo_Entrega": "Tienda Converse Multiplaza (PA)/7172",
+      "Num_Ordenes": 24,
+      "Revenue_USD": 1688.57
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Naranjos (GT)",
+      "Num_Ordenes": 36,
+      "Revenue_USD": 1683.0911999999998
+    },
+    {
+      "Metodo_Entrega": "Sportline Multiplaza Tegu (HN)",
+      "Num_Ordenes": 37,
+      "Revenue_USD": 1678.0251999999998
+    },
+    {
+      "Metodo_Entrega": "Kicks Multiplaza (SV)",
+      "Num_Ordenes": 10,
+      "Revenue_USD": 1639.58
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Arkadia (CO)",
+      "Num_Ordenes": 24,
+      "Revenue_USD": 1620.78
+    },
+    {
+      "Metodo_Entrega": "​ ​Tienda Sportline Cascadas Mall (HN)",
+      "Num_Ordenes": 32,
+      "Revenue_USD": 1613.2112000000002
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Miraflores (GT)",
+      "Num_Ordenes": 18,
+      "Revenue_USD": 1609.5116800000003
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Town Center (PA)",
+      "Num_Ordenes": 14,
+      "Revenue_USD": 1591.5700000000002
+    },
+    {
+      "Metodo_Entrega": "Kicks Centro Mayor (CO)",
+      "Num_Ordenes": 11,
+      "Revenue_USD": 1504.6080000000004
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Paseo Metrópoli (CR)",
+      "Num_Ordenes": 31,
+      "Revenue_USD": 1485.1299999999997
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio Converse PA",
+      "Num_Ordenes": 25,
+      "Revenue_USD": 1469.98
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Calle 82 (CO)",
+      "Num_Ordenes": 16,
+      "Revenue_USD": 1448.16
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Tesoro (CO)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 1443.372
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Mayorca (CO)",
+      "Num_Ordenes": 22,
+      "Revenue_USD": 1440.6840000000002
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Chipichape (CO)",
+      "Num_Ordenes": 23,
+      "Revenue_USD": 1369.956
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Unicentro Bogotá (CO)",
+      "Num_Ordenes": 11,
+      "Revenue_USD": 1347.384
+    },
+    {
+      "Metodo_Entrega": "Sportline San Miguel (SV)",
+      "Num_Ordenes": 23,
+      "Revenue_USD": 1340.56
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Portales (GT)",
+      "Num_Ordenes": 26,
+      "Revenue_USD": 1299.10912
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Managua Metrocentro (NI)",
+      "Num_Ordenes": 18,
+      "Revenue_USD": 1281.6278999999997
+    },
+    {
+      "Metodo_Entrega": "Sportline Mall Premier (HN)",
+      "Num_Ordenes": 35,
+      "Revenue_USD": 1275.3408
+    },
+    {
+      "Metodo_Entrega": "Tienda Plaza Regency (PA)",
+      "Num_Ordenes": 26,
+      "Revenue_USD": 1263.1500000000003
+    },
+    {
+      "Metodo_Entrega": "Sportline outlet store avendia central(CR)",
+      "Num_Ordenes": 35,
+      "Revenue_USD": 1261.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Oakland (GT)",
+      "Num_Ordenes": 13,
+      "Revenue_USD": 1258.8313600000001
+    },
+    {
+      "Metodo_Entrega": "Tienda Multicentro Las Américas (NI)",
+      "Num_Ordenes": 42,
+      "Revenue_USD": 1239.23277
+    },
+    {
+      "Metodo_Entrega": "Sportline Outlet Store (PA)",
+      "Num_Ordenes": 23,
+      "Revenue_USD": 1230.93
+    },
+    {
+      "Metodo_Entrega": "Tienda KICKS Multiplaza (CR)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 1148.6599999999999
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Naranjo (GT)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 1098.8313600000001
+    },
+    {
+      "Metodo_Entrega": "Sportline Calima Mall Plaza (CO)",
+      "Num_Ordenes": 16,
+      "Revenue_USD": 1064.148
+    },
+    {
+      "Metodo_Entrega": "Sportline Outlet Miraflores (GT)/2012",
+      "Num_Ordenes": 25,
+      "Revenue_USD": 1025.2160000000001
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Agora Mall (DO)",
+      "Num_Ordenes": 6,
+      "Revenue_USD": 1021.19
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks City Mall (CR)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 991.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Mega Mall SPS(HN)",
+      "Num_Ordenes": 15,
+      "Revenue_USD": 962.6332
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Plaza Fabricato Medellín (CO)",
+      "Num_Ordenes": 16,
+      "Revenue_USD": 934.524
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Caribe Plaza (CO)",
+      "Num_Ordenes": 13,
+      "Revenue_USD": 927.384
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Nuestro Bogotá (CO)",
+      "Num_Ordenes": 17,
+      "Revenue_USD": 908.1600000000001
+    },
+    {
+      "Metodo_Entrega": "Sportline Santa Ana (SV)",
+      "Num_Ordenes": 16,
+      "Revenue_USD": 832.27
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Fontanar (CO)",
+      "Num_Ordenes": 13,
+      "Revenue_USD": 831.3359999999999
+    },
+    {
+      "Metodo_Entrega": "Sportline Florida (CO)",
+      "Num_Ordenes": 14,
+      "Revenue_USD": 802.548
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks La felicidad (CO)",
+      "Num_Ordenes": 7,
+      "Revenue_USD": 779.892
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Parque Vistares (GT)",
+      "Num_Ordenes": 19,
+      "Revenue_USD": 773.6768
+    },
+    {
+      "Metodo_Entrega": "Tienda Converse Metromall (PA)/7171",
+      "Num_Ordenes": 16,
+      "Revenue_USD": 772.19
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Galeria 360 (DO)",
+      "Num_Ordenes": 8,
+      "Revenue_USD": 766.4280000000001
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Kids Brisas Capital (PA)",
+      "Num_Ordenes": 13,
+      "Revenue_USD": 735.63
+    },
+    {
+      "Metodo_Entrega": "Tienda KICKS Jardin Plaza (CO)",
+      "Num_Ordenes": 6,
+      "Revenue_USD": 709.1160000000001
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Felicidad (CO)",
+      "Num_Ordenes": 10,
+      "Revenue_USD": 706.62
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Lincoln Plaza (CR)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 666.9999999999999
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Metrocentro (NI)",
+      "Num_Ordenes": 14,
+      "Revenue_USD": 629.9278199999999
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Jardín Plaza Cali (CO)",
+      "Num_Ordenes": 6,
+      "Revenue_USD": 625.116
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Portal Del Prado (CO)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 606.876
+    },
+    {
+      "Metodo_Entrega": "Sportline Unimall (HN)",
+      "Num_Ordenes": 13,
+      "Revenue_USD": 595.3492000000001
+    },
+    {
+      "Metodo_Entrega": "Sportline Market Plaza (PA)/7185",
+      "Num_Ordenes": 10,
+      "Revenue_USD": 573.14
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Sambil (DO)",
+      "Num_Ordenes": 7,
+      "Revenue_USD": 572.6450000000001
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Agora Mall (DO)",
+      "Num_Ordenes": 11,
+      "Revenue_USD": 562.445
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Parque La Colina (CO)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 548.244
+    },
+    {
+      "Metodo_Entrega": "Sportline Buena Vista (CO)",
+      "Num_Ordenes": 10,
+      "Revenue_USD": 534.996
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Portal 80 (CO)",
+      "Num_Ordenes": 12,
+      "Revenue_USD": 534.9119999999999
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Plaza central (CO)",
+      "Num_Ordenes": 7,
+      "Revenue_USD": 530.22
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Downtown Center (DO)",
+      "Num_Ordenes": 5,
+      "Revenue_USD": 513.0260000000001
+    },
+    {
+      "Metodo_Entrega": "Sportline Sonsonate (SV)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 507.71
+    },
+    {
+      "Metodo_Entrega": "​ Sportline El Centro (HN)",
+      "Num_Ordenes": 25,
+      "Revenue_USD": 473.18879999999996
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Metrocentro (NI)",
+      "Num_Ordenes": 19,
+      "Revenue_USD": 443.71314
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Fabricato Medellín (CO)",
+      "Num_Ordenes": 8,
+      "Revenue_USD": 442.668
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Mega Centro (DO)",
+      "Num_Ordenes": 10,
+      "Revenue_USD": 441.77900000000005
+    },
+    {
+      "Metodo_Entrega": "Sportline Galerías Del Valle (HN)",
+      "Num_Ordenes": 13,
+      "Revenue_USD": 431.6312
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Viva Villavicencio (CO)",
+      "Num_Ordenes": 6,
+      "Revenue_USD": 423.516
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Único 3 (CO)",
+      "Num_Ordenes": 10,
+      "Revenue_USD": 408.972
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Town Center (PA)",
+      "Num_Ordenes": 8,
+      "Revenue_USD": 403.08000000000004
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Alegra Barranquilla (CO)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 394.60800000000006
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Kids Miraflores (GT)",
+      "Num_Ordenes": 13,
+      "Revenue_USD": 376.28031999999996
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Serrezuela (CO)",
+      "Num_Ordenes": 3,
+      "Revenue_USD": 374.34000000000003
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids El Tesoro (CO)",
+      "Num_Ordenes": 7,
+      "Revenue_USD": 364.656
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Mall Premier (HN)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 345.6732
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Kids City Mall (CR)",
+      "Num_Ordenes": 15,
+      "Revenue_USD": 343.13
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks City Mall SPS (HN)",
+      "Num_Ordenes": 3,
+      "Revenue_USD": 336.8756
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Boulevard Santiago (PA)",
+      "Num_Ordenes": 6,
+      "Revenue_USD": 333.59999999999997
+    },
+    {
+      "Metodo_Entrega": "Kicks Buena Vista (CO)",
+      "Num_Ordenes": 4,
+      "Revenue_USD": 333.408
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Cacique (CO)",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 326.37600000000003
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Galería Sto Domingo (NI)",
+      "Num_Ordenes": 7,
+      "Revenue_USD": 323.64603
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline COS Sport Plaza (PA)",
+      "Num_Ordenes": 4,
+      "Revenue_USD": 288.8
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Sopo (CO)",
+      "Num_Ordenes": 5,
+      "Revenue_USD": 265.03200000000004
+    },
+    {
+      "Metodo_Entrega": "Tienda Converse Albrook Mall (PA)/7170",
+      "Num_Ordenes": 3,
+      "Revenue_USD": 263.07
+    },
+    {
+      "Metodo_Entrega": "Sportline Boulevard Penonomé (PA)",
+      "Num_Ordenes": 7,
+      "Revenue_USD": 247.01999999999998
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA KIDS Multiplaza Tegu (HN)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 223.11200000000002
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Parque La Colina (CO)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 215.868
+    },
+    {
+      "Metodo_Entrega": "Tienda Tegucigalpa (HN)",
+      "Num_Ordenes": 4,
+      "Revenue_USD": 189.7152
+    },
+    {
+      "Metodo_Entrega": "Sportline Galería Sto Domingo (NI)",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 181.87037999999998
+    },
+    {
+      "Metodo_Entrega": "Sportline Praderas Xela (GT)",
+      "Num_Ordenes": 5,
+      "Revenue_USD": 180.45952
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Jardín Plaza Cúcuta (CO)",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 170.376
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids La Felicidad (CO)",
+      "Num_Ordenes": 4,
+      "Revenue_USD": 167.892
+    },
+    {
+      "Metodo_Entrega": "Sportline Comayagua(HN)/4036",
+      "Num_Ordenes": 3,
+      "Revenue_USD": 155.514
+    },
+    {
+      "Metodo_Entrega": "Sportline Mall Paseo Chitre (PA)",
+      "Num_Ordenes": 4,
+      "Revenue_USD": 144.36999999999998
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Agora Mall (DO)",
+      "Num_Ordenes": 3,
+      "Revenue_USD": 130.781
+    },
+    {
+      "Metodo_Entrega": "Tienda Under Armour Oakland Place (GT)",
+      "Num_Ordenes": 4,
+      "Revenue_USD": 128.62848
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Coronado (PA)",
+      "Num_Ordenes": 3,
+      "Revenue_USD": 124.05000000000001
+    },
+    {
+      "Metodo_Entrega": "Tienda Súper Outler Puerta Del Norte (CO)",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 117.552
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Plaza Duarte (DO)",
+      "Num_Ordenes": 4,
+      "Revenue_USD": 117.24900000000001
+    },
+    {
+      "Metodo_Entrega": "Sportline Mall Multiplaza (HN)",
+      "Num_Ordenes": 5,
+      "Revenue_USD": 115.1988
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Pradera Huehuetenango (GT)",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 99.18720000000002
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Megamall (HN)",
+      "Num_Ordenes": 9,
+      "Revenue_USD": 92.4748
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Sportline La Ceiba (HN)",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 79.4776
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Santa Marta Buenavista (CO)",
+      "Num_Ordenes": 1,
+      "Revenue_USD": 52.788000000000004
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Outlet Único Bucaramanga (CO)",
+      "Num_Ordenes": 3,
+      "Revenue_USD": 50.328
+    },
+    {
+      "Metodo_Entrega": "​ Sportline Kids City Mall SPS (HN)",
+      "Num_Ordenes": 2,
+      "Revenue_USD": 43.9992
+    },
+    {
+      "Metodo_Entrega": "Under Armour Multiplaza Cudirrabat (CR)",
+      "Num_Ordenes": 1,
+      "Revenue_USD": 39.9
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Galería Santo Domingo (NI)",
+      "Num_Ordenes": 1,
+      "Revenue_USD": 37.25973
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Megaplaza La Ceiba (HN)",
+      "Num_Ordenes": 1,
+      "Revenue_USD": 34.238
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Único Neiva (CO)",
+      "Num_Ordenes": 1,
+      "Revenue_USD": 23.976
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Unimall (HN)",
+      "Num_Ordenes": 1,
+      "Revenue_USD": 19.1996
+    }
+  ],
+  "cancellation_rate": 38.806945863125634,
+  "avg_discount_percentage": 32.67322215689574,
+  "total_discounts_usd": 67931.4681516684,
+  "funnel_analysis": [
+    {
+      "stage": "Pago Verificado",
+      "count": 287
+    },
+    {
+      "stage": "Packing",
+      "count": 40
+    },
+    {
+      "stage": "En Ruta",
+      "count": 1897
+    },
+    {
+      "stage": "Entregado",
+      "count": 11913
+    }
+  ],
+  "carrier_performance": [
+    {
+      "Transportista": "Coordinadora COL",
+      "Num_Ordenes": 4659,
+      "Revenue_USD": 357419.6976,
+      "Entregas_Exitosas": 5764,
+      "Tasa_Exito": 123.72
+    },
+    {
+      "Transportista": "Retiro Tienda",
+      "Num_Ordenes": 2653,
+      "Revenue_USD": 176178.06315,
+      "Entregas_Exitosas": 2293,
+      "Tasa_Exito": 86.43
+    },
+    {
+      "Transportista": "C807 Xpress",
+      "Num_Ordenes": 1443,
+      "Revenue_USD": 92950.40144,
+      "Entregas_Exitosas": 966,
+      "Tasa_Exito": 66.94
+    },
+    {
+      "Transportista": "Districad La Cancha",
+      "Num_Ordenes": 1079,
+      "Revenue_USD": 77359.55249999999,
+      "Entregas_Exitosas": 1346,
+      "Tasa_Exito": 124.75
+    },
+    {
+      "Transportista": "C807 Xpress Salvador",
+      "Num_Ordenes": 735,
+      "Revenue_USD": 62815.850000000006,
+      "Entregas_Exitosas": 0,
+      "Tasa_Exito": 0.0
+    },
+    {
+      "Transportista": "Entrego",
+      "Num_Ordenes": 888,
+      "Revenue_USD": 61474.35,
+      "Entregas_Exitosas": 1232,
+      "Tasa_Exito": 138.74
+    },
+    {
+      "Transportista": "UES Uruguay La Cancha",
+      "Num_Ordenes": 702,
+      "Revenue_USD": 55407.153,
+      "Entregas_Exitosas": 867,
+      "Tasa_Exito": 123.5
+    },
+    {
+      "Transportista": "La Terminal Express",
+      "Num_Ordenes": 470,
+      "Revenue_USD": 30466.729999999996,
+      "Entregas_Exitosas": 562,
+      "Tasa_Exito": 119.57
+    },
+    {
+      "Transportista": "Districad",
+      "Num_Ordenes": 294,
+      "Revenue_USD": 27535.027,
+      "Entregas_Exitosas": 300,
+      "Tasa_Exito": 102.04
+    },
+    {
+      "Transportista": "UES Uruguay",
+      "Num_Ordenes": 210,
+      "Revenue_USD": 22741.800750000002,
+      "Entregas_Exitosas": 241,
+      "Tasa_Exito": 114.76
+    },
+    {
+      "Transportista": "Cargotrans",
+      "Num_Ordenes": 86,
+      "Revenue_USD": 3708.29043,
+      "Entregas_Exitosas": 0,
+      "Tasa_Exito": 0.0
+    },
+    {
+      "Transportista": "Frederic Schad",
+      "Num_Ordenes": 39,
+      "Revenue_USD": 2450.312,
+      "Entregas_Exitosas": 0,
+      "Tasa_Exito": 0.0
+    },
+    {
+      "Transportista": "Free delivery charges",
+      "Num_Ordenes": 1,
+      "Revenue_USD": 99.75,
+      "Entregas_Exitosas": 0,
+      "Tasa_Exito": 0.0
+    }
+  ],
+  "cycle_time_stats": {
+    "mean": 1.443592131937976,
+    "median": 1.0,
+    "min": 0.0,
+    "max": 17.0,
+    "std": 1.648223254259296
+  },
+  "cycle_time_by_delivery": [
+    {
+      "Metodo_Entrega": "Kicks Cayala (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Kicks Centro Mayor (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Kicks Buena Vista (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Megaplaza La Ceiba (HN)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Parque La Colina (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Centro Histórico (SV)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Buena Vista (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Calima Mall Plaza (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline outlet store avendia central(CR)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda KICKS Jardin Plaza (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Agora Mall (DO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Praderas Xela (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Outlet Plaza El Establo (NI)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Outlet Miraflores (GT)/2012",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Market Plaza (PA)/7185",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Sportline Mall Multiplaza (HN)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks City Mall (CR)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Galería Sto Domingo (NI)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Oakland (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Agora Mall (DO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Downtown Center (DO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Jardín Plaza Cúcuta (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Chipichape (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Caribe Plaza (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Oakland (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Parque La Colina (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Tesoro (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Serrezuela (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Unicentro Bogotá (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Naranjo (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Miraflores (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Managua Metrocentro (NI)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA KIDS Multiplaza Tegu (HN)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids La Felicidad (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Coronado (PA)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Alta Plaza (PA)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Plaza Duarte (DO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Parque Vistares (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Naranjos (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Portal Del Prado (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Centro Mayor (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline City Mall (CR)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Viva Villavicencio (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Sopo (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Único Neiva (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Alegra Barranquilla (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Kids City Mall (CR)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Tegucigalpa (HN)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Portal 80 (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Portales (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Pradera Huehuetenango (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Titan Plaza (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Town Center (PA)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Westland (PA)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Súper Outler Puerta Del Norte (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Nuestro Bogotá (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Miraflores (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Plaza central (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Parque La Colina (CO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Metrocentro (NI)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Mega Centro (DO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Kids Miraflores (GT)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Galeria 360 (DO)",
+      "Dias_Promedio": 0.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Chiriquí Mall (PA)",
+      "Dias_Promedio": 0.06060606060606061
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Multiplaza (PA)",
+      "Dias_Promedio": 0.08791208791208792
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio UY Kicks",
+      "Dias_Promedio": 0.10942760942760943
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Mega Mall SPS(HN)",
+      "Dias_Promedio": 0.1111111111111111
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Calle82 (CO)",
+      "Dias_Promedio": 0.125
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Plaza Fabricato Medellín (CO)",
+      "Dias_Promedio": 0.13333333333333333
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Multiplaza Escazú (CR)",
+      "Dias_Promedio": 0.13333333333333333
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Paseo Metrópoli (CR)",
+      "Dias_Promedio": 0.1388888888888889
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline paseo de las flores (CR)",
+      "Dias_Promedio": 0.1388888888888889
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Fabricato Medellín (CO)",
+      "Dias_Promedio": 0.14285714285714285
+    },
+    {
+      "Metodo_Entrega": "Tienda KICKS Multiplaza (CR)",
+      "Dias_Promedio": 0.16666666666666666
+    },
+    {
+      "Metodo_Entrega": "Tienda Converse Metromall (PA)/7171",
+      "Dias_Promedio": 0.16666666666666666
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Calle 82 (CO)",
+      "Dias_Promedio": 0.16666666666666666
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Arkadia (CO)",
+      "Dias_Promedio": 0.17647058823529413
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Metrocentro (SV)",
+      "Dias_Promedio": 0.18181818181818182
+    },
+    {
+      "Metodo_Entrega": "Sportline El Dorado (PA)",
+      "Dias_Promedio": 0.18253968253968253
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Albrook Mall (PA)",
+      "Dias_Promedio": 0.1864406779661017
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Los Molinos (CO)",
+      "Dias_Promedio": 0.19230769230769232
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Multiplaza (SV)",
+      "Dias_Promedio": 0.1984126984126984
+    },
+    {
+      "Metodo_Entrega": "Kicks Multiplaza (SV)",
+      "Dias_Promedio": 0.2
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Kids Brisas Capital (PA)",
+      "Dias_Promedio": 0.2
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Único 3 (CO)",
+      "Dias_Promedio": 0.2
+    },
+    {
+      "Metodo_Entrega": "Tienda Multicentro Las Américas (NI)",
+      "Dias_Promedio": 0.20754716981132076
+    },
+    {
+      "Metodo_Entrega": "Sportline La Gran Vía (SV)",
+      "Dias_Promedio": 0.21621621621621623
+    },
+    {
+      "Metodo_Entrega": "Sportline Plaza Mundo Apopa (SV)",
+      "Dias_Promedio": 0.21621621621621623
+    },
+    {
+      "Metodo_Entrega": "Sportline Sonsonate (SV)",
+      "Dias_Promedio": 0.2222222222222222
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Town Center (PA)",
+      "Dias_Promedio": 0.2222222222222222
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline City Mall Tegucigalpa (HN)",
+      "Dias_Promedio": 0.2222222222222222
+    },
+    {
+      "Metodo_Entrega": "Kicks Lincoln (CR)",
+      "Dias_Promedio": 0.22727272727272727
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Bambú (SV)",
+      "Dias_Promedio": 0.22727272727272727
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Mayorca (CO)",
+      "Dias_Promedio": 0.23529411764705882
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Albrook Mall (PA)",
+      "Dias_Promedio": 0.23809523809523808
+    },
+    {
+      "Metodo_Entrega": "Sportline Los Andes Mall (PA)",
+      "Dias_Promedio": 0.2459016393442623
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Arkadia (CO)",
+      "Dias_Promedio": 0.25
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline COS Sport Plaza (PA)",
+      "Dias_Promedio": 0.25
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Felicidad (CO)",
+      "Dias_Promedio": 0.25
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Metromall (PA)",
+      "Dias_Promedio": 0.2583732057416268
+    },
+    {
+      "Metodo_Entrega": "Sportline Mega Mall (HN)",
+      "Dias_Promedio": 0.2619047619047619
+    },
+    {
+      "Metodo_Entrega": "Sportline Mall Premier (HN)",
+      "Dias_Promedio": 0.2692307692307692
+    },
+    {
+      "Metodo_Entrega": "Sportline Outlet Store (PA)",
+      "Dias_Promedio": 0.28
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Metrocentro (NI)",
+      "Dias_Promedio": 0.28
+    },
+    {
+      "Metodo_Entrega": "Tienda Converse Multiplaza (PA)/7172",
+      "Dias_Promedio": 0.28
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Sambil (DO)",
+      "Dias_Promedio": 0.2857142857142857
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Santafé (CO)",
+      "Dias_Promedio": 0.2857142857142857
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Boulevard Santiago (PA)",
+      "Dias_Promedio": 0.2857142857142857
+    },
+    {
+      "Metodo_Entrega": "​ Sportline El Centro (HN)",
+      "Dias_Promedio": 0.30303030303030304
+    },
+    {
+      "Metodo_Entrega": "Sportline Multiplaza Tegu (HN)",
+      "Dias_Promedio": 0.30303030303030304
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Metrosur (SV)",
+      "Dias_Promedio": 0.30416666666666664
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Fontanar (CO)",
+      "Dias_Promedio": 0.3076923076923077
+    },
+    {
+      "Metodo_Entrega": "​ ​Tienda Sportline Cascadas Mall (HN)",
+      "Dias_Promedio": 0.32
+    },
+    {
+      "Metodo_Entrega": "Sportline Florida (CO)",
+      "Dias_Promedio": 0.3333333333333333
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Mall Premier (HN)",
+      "Dias_Promedio": 0.3333333333333333
+    },
+    {
+      "Metodo_Entrega": "Tienda Converse Albrook Mall (PA)/7170",
+      "Dias_Promedio": 0.3333333333333333
+    },
+    {
+      "Metodo_Entrega": "Sportline San Miguel (SV)",
+      "Dias_Promedio": 0.3333333333333333
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Agora Mall (DO)",
+      "Dias_Promedio": 0.3333333333333333
+    },
+    {
+      "Metodo_Entrega": "Tienda Sportline Metrocentro (SV)",
+      "Dias_Promedio": 0.3431372549019608
+    },
+    {
+      "Metodo_Entrega": "Tienda Outlet Galerías (SV)",
+      "Dias_Promedio": 0.3474576271186441
+    },
+    {
+      "Metodo_Entrega": "Sportline Avenida Central (CR)",
+      "Dias_Promedio": 0.3522727272727273
+    },
+    {
+      "Metodo_Entrega": "Sportline Plaza Mundo (SV)",
+      "Dias_Promedio": 0.3541666666666667
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Multiplaza (PA)",
+      "Dias_Promedio": 0.35443037974683544
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Lincoln Plaza (CR)",
+      "Dias_Promedio": 0.35714285714285715
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Plaza Mundo (SV)",
+      "Dias_Promedio": 0.36363636363636365
+    },
+    {
+      "Metodo_Entrega": "Tienda Plaza Regency (PA)",
+      "Dias_Promedio": 0.36666666666666664
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks La Gran Vía (SV)",
+      "Dias_Promedio": 0.38095238095238093
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids Megamall (HN)",
+      "Dias_Promedio": 0.38461538461538464
+    },
+    {
+      "Metodo_Entrega": "Sportline Unimall (HN)",
+      "Dias_Promedio": 0.4
+    },
+    {
+      "Metodo_Entrega": "Sportline Mall Paseo Chitre (PA)",
+      "Dias_Promedio": 0.4
+    },
+    {
+      "Metodo_Entrega": "Sportline Galerías Del Valle (HN)",
+      "Dias_Promedio": 0.4117647058823529
+    },
+    {
+      "Metodo_Entrega": "Sportline Santa Ana (SV)",
+      "Dias_Promedio": 0.47058823529411764
+    },
+    {
+      "Metodo_Entrega": "Sportline Boulevard Penonomé (PA)",
+      "Dias_Promedio": 0.5
+    },
+    {
+      "Metodo_Entrega": "​ Sportline Kids City Mall SPS (HN)",
+      "Dias_Promedio": 0.5
+    },
+    {
+      "Metodo_Entrega": "Sportline Kids El Tesoro (CO)",
+      "Dias_Promedio": 0.5714285714285714
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Viva Envigado (CO)",
+      "Dias_Promedio": 0.7222222222222222
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio Converse PA",
+      "Dias_Promedio": 0.7428571428571429
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA City Mall SPS (HN)",
+      "Dias_Promedio": 0.8301886792452831
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio UY La Cancha",
+      "Dias_Promedio": 0.948292220113852
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio PA",
+      "Dias_Promedio": 0.9725343320848939
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Sportline La Ceiba (HN)",
+      "Dias_Promedio": 1.0
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Cacique (CO)",
+      "Dias_Promedio": 1.0
+    },
+    {
+      "Metodo_Entrega": "Tienda SLA Kids Galería Santo Domingo (NI)",
+      "Dias_Promedio": 1.0
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio HN",
+      "Dias_Promedio": 1.2644628099173554
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio NI",
+      "Dias_Promedio": 1.3096774193548386
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio SV",
+      "Dias_Promedio": 1.4862104187946885
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio GT",
+      "Dias_Promedio": 1.8847290640394088
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio CR",
+      "Dias_Promedio": 1.9276018099547512
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Montevideo Shopping (UY) (900001)",
+      "Dias_Promedio": 2.0278884462151394
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Portones (UY) (900002)",
+      "Dias_Promedio": 2.0555555555555554
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Nuevocentro (UY) (900005)",
+      "Dias_Promedio": 2.0693877551020408
+    },
+    {
+      "Metodo_Entrega": "Tienda La Cancha Tres Cruces (UY) (900006)",
+      "Dias_Promedio": 2.1216216216216215
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio CO",
+      "Dias_Promedio": 2.2708403080013393
+    },
+    {
+      "Metodo_Entrega": "Envío Domicilio DO",
+      "Dias_Promedio": 2.4166666666666665
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Montevideo (UY)",
+      "Dias_Promedio": 2.425531914893617
+    },
+    {
+      "Metodo_Entrega": "Tienda Kicks Nuevocentro (UY)",
+      "Dias_Promedio": 2.5706214689265536
+    }
+  ]
+}
