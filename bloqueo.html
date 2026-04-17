@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso pendiente - Sportline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, Roboto, sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 580px;
+            width: 100%;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        /* Header con logos */
+        .top-header {
+            background: #ffffff;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-bottom: 1px solid #eef2f6;
+        }
+
+        .logo-item {
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .logo-item img {
+            max-height: 40px;
+            width: auto;
+            max-width: 120px;
+            object-fit: contain;
+        }
+
+        .logo-divider {
+            width: 1px;
+            height: 30px;
+            background: #e0e6ed;
+            display: inline-block;
+        }
+
+        /* Contenido */
+        .content {
+            padding: 40px 32px 32px 32px;
+            text-align: center;
+        }
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            background: #f0f6ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px auto;
+        }
+
+        .icon svg {
+            width: 32px;
+            height: 32px;
+            color: #3b82f6;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1e2a3e;
+            margin-bottom: 12px;
+        }
+
+        .message {
+            color: #5a6874;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        .info-box {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .info-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #5a6874;
+            margin-bottom: 8px;
+        }
+
+        .info-text {
+            font-size: 15px;
+            color: #1e2a3e;
+            line-height: 1.5;
+        }
+
+        .contact-card {
+            background: #1a2a3e;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 8px;
+            text-align: left;
+        }
+
+        .contact-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #94a3b8;
+            margin-bottom: 8px;
+        }
+
+        .contact-email {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .contact-email a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-email a:hover {
+            border-bottom-color: #ffffff;
+        }
+
+        .response-time {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 12px;
+        }
+
+        .footer {
+            background: #f8fafc;
+            padding: 20px 32px;
+            text-align: center;
+            border-top: 1px solid #eef2f6;
+        }
+
+        .footer p {
+            font-size: 12px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            .top-header {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .logo-divider {
+                display: none;
+            }
+            .logo-item {
+                min-width: auto;
+            }
+            .content {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <!-- Header con los 4 logos -->
+            <div class="top-header">
+                <div class="logo-item">
+                    <img src="https://www.sportline.com.pa/static/version1775447698/frontend/Omnipro/V2_Sportline_Theme/es_PA/images/sportline-logo.svg" alt="Sportline">
+                </div>
+                <span class="logo-divider"></span>
+                <div class="logo-item">
+                    <img src="https://agora.com.do/wp-content/uploads/2025/04/KICKS.png" alt="KICKS" onerror="this.src='https://placehold.co/120x40?text=KICKS'">
+                </div>
+                <span class="logo-divider"></span>
+                <div class="logo-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Converse_logo.svg/3840px-Converse_logo.svg.png" alt="Converse" onerror="this.src='https://placehold.co/120x40?text=CONVERSE'">
+                </div>
+                <span class="logo-divider"></span>
+                <div class="logo-item">
+                    <img src="https://www.lacancha.uy/static/version1775447698/frontend/Infinite/LaCancha_Theme/es_UY/images/lacancha-logo.svg" alt="La Cancha" onerror="this.src='https://placehold.co/120x40?text=LA+CANCHA'">
+                </div>
+            </div>
+
+            <!-- Contenido (tono suave) -->
+            <div class="content">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                </div>
+
+                <h1>Acceso pendiente de autorización</h1>
+                
+                <div class="message">
+                    Este informe está disponible solo para usuarios con permisos específicos.
+                </div>
+
+                <div class="info-box">
+                    <div class="info-label">🔐 ¿Qué puedo hacer?</div>
+                    <div class="info-text">
+                        Si necesitas acceder a esta información, por favor solicita los permisos correspondientes al área de Ecommerce.
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-label">📧 Contacta con Ecommerce</div>
+                    <div class="contact-email">
+                        <a href="mailto:marlenis.ortega@sportline.com.pa">marlenis.ortega@sportline.com.pa</a>
+                    </div>
+                    <div class="response-time">
+                        El equipo de Ecommerce atenderá tu consulta en un plazo máximo de 24 horas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>© 2025 Sportline · Todos los derechos reservados</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
